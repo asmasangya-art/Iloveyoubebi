@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Portrait using CSS</title>
+    <style>
+        body {
+            background: rgb(236, 236, 236);
+            overflow: hidden;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        p {
+            line-height: 14px;
+            background: url(
+"https://scontent.fmnl4-7.fna.fbcdn.net/v/t51.82787-15/613685955_18550678585026696_1740196560736243375_n.webp?stp=dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xgZK66T0XHsQ7kNvwHhzFNv&_nc_oc=AdnhsCm1WeiCwHNZ9CTxMRhIlxTpuDValyQ-L6cuP8Pe_bG-1dJ0wuey3VaxXzIgiqU&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=KCYJIvT4srxATsqobUjsCg&oh=00_AfsyZ4gCZCIpCKGlQNVdYlPgcbga8Pb9IxaY-i3or4oetg&oe=6990AC25");
+
+            -webkit-background-clip: text;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0);
+            background-size: 80vh;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text"></p>
+
+    <script>
+        let str = "With you feels both gentle and monumental, like time learned a new rhythm when we met. I still think about our early dates—the way conversation came easily, the way being together felt natural before it felt deep. I love that we talk about the future — not in a rushed or rigid way, but with hope. Goals, plans, ideas of where we’re going, both individually and together. And through you, my faith with the Lord has grown in a deeper, more meaningful way. You inspire me to be more grounded, more grateful, and more intentional—not just in love, but in life. Thank you for choosing me, again and again. For the time, the patience, the care. I don’t need grand promises—I just want more days like the ones we’ve already had, more moments that feel like us.";
+        document.getElementById("text").innerHTML = str.repeat(500);
+    </script>
+</body>
+</html>
